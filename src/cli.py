@@ -47,6 +47,7 @@ def cmd_evaluate(args):
             f"{strategy}: hit@5={s['hit_rate@5']:.3f} "
             f"hit@1={s['hit_rate@1']:.3f} "
             f"accuracy={s['accuracy']:.3f} "
+            f"phrase_survival={s['gold_phrase_survival']:.3f} "
             f"({s['n_questions']} questions, {s['n_chunks']} chunks)"
         )
     print(f"Results written to {RESULTS_DIR}")

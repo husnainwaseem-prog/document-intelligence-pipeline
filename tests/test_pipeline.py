@@ -60,6 +60,20 @@ def test_chunk_document_citations():
     assert chunks[0]["locator"] == "p. 1"
 
 
+def test_chunk_document_maps_chunks_to_start_unit():
+    doc = {"doc_id": "demo", "units": [
+        ("First unit here. " * 20, "p. 1"),
+        ("Second unit here. " * 20, "p. 2"),
+    ]}
+    chunks = chunk_document(doc, "fixed")
+    locators = {c["locator"] for c in chunks}
+    assert locators <= {"p. 1", "p. 2"}
+    assert "p. 1" in locators and "p. 2" in locators
+    # Sentence chunking never splits a sentence across chunks.
+    for chunk in chunk_document(doc, "sentence"):
+        assert not chunk["text"].endswith("unit")
+
+
 def test_score_question_hit_and_correct():
     result = {
         "answer": "Employees receive 25 days of annual leave per year.",
@@ -68,10 +82,11 @@ def test_score_question_hit_and_correct():
             {"doc_id": "leave_policy"},
         ],
     }
+    # Gold doc is second, so hit@5 and correctness hold but hit@1 does not.
     hit, top1, correct = score_question(
         result, "leave_policy", "25 days of annual leave"
     )
-    assert hit and top1 and correct
+    assert hit and correct and not top1
     hit, top1, correct = score_question(result, "moon_landing", "20 July 1969")
     assert not hit and not top1 and not correct
 

@@ -1,0 +1,53 @@
+id,question,gold_doc,gold_answer,predicted_doc,citation,hit@5,hit@1,correct,phrase_survives
+q01,How many days of annual leave do employees receive per year?,leave_policy,25 days of annual leave,leave_policy,leave_policy [p. 1],True,True,True,True
+q02,What is the notice period for resignation?,leave_policy,notice period for resignation is 30 days,leave_policy,leave_policy [p. 3],True,True,True,True
+q03,How many days per week may employees work from home?,remote_work,work from home up to 3 days per week,remote_work,remote_work [p. 1],True,True,True,True
+q04,What are the core hours for remote workers?,remote_work,Core hours are 10am to 3pm,remote_work,remote_work [p. 1],True,True,True,True
+q05,How long is customer data retained after account closure?,data_privacy,retained for 90 days after account closure,data_privacy,data_privacy [p. 1],True,True,True,True
+q06,Within how long must a data breach be reported to the regulator?,data_privacy,reported to the regulator within 72 hours,data_privacy,data_privacy [p. 2],True,True,True,True
+q07,Which planet is the largest in the solar system?,solar_system,Jupiter is the largest planet,solar_system,solar_system [p. 1],True,True,True,True
+q08,What are Saturn's rings made of?,solar_system,made almost entirely of water ice,solar_system,solar_system [p. 1],True,True,True,True
+q09,How many times does the human heart beat per day?,human_heart,"beats about 100,000 times per day",human_heart,human_heart [p. 1],True,True,True,True
+q10,What is a normal resting heart rate for adults?,human_heart,between 60 and 100 beats per minute,human_heart,human_heart [p. 1],True,True,True,True
+q11,Who created Python and when was it first released?,python_basics,created by Guido van Rossum and first released in 1991,python_basics,python_basics [p. 1],True,True,True,True
+q12,What is PEP 8?,python_basics,PEP 8 is Python's official style guide,python_basics,python_basics [p. 2],True,True,True,True
+q13,When did D-Day take place?,world_war_ii,on 6 June 1944,world_war_ii,world_war_ii [p. 1],True,True,True,True
+q14,When did the Second World War end?,world_war_ii,ended in 1945,world_war_ii,world_war_ii [p. 1],True,True,True,True
+q15,What percentage of Earth's water is held in the oceans?,water_cycle,97 percent of Earth's water is held in the oceans,water_cycle,water_cycle [p. 1],True,True,True,True
+q16,How much water does the Amazon River discharge per second?,water_cycle,"209,000 cubic metres of water per second",water_cycle,water_cycle [p. 2],True,True,True,True
+q17,What time should new starters report to reception on their first day?,onboarding_guide,report to reception at 9am,onboarding_guide,onboarding_guide [para 1],True,True,True,True
+q18,How long does the probation period last?,onboarding_guide,probation period lasts 3 months,onboarding_guide,onboarding_guide [para 2],True,True,True,True
+q19,What is the daily meal reimbursement limit while travelling?,expense_policy,up to 25 euros per day,expense_policy,expense_policy [para 1],True,True,True,True
+q20,Within how many days must expense claims be submitted?,expense_policy,submitted within 30 days of the expense,expense_policy,expense_policy [para 3],True,True,True,True
+q21,When was the Bastille stormed?,french_revolution,on 14 July 1789,french_revolution,french_revolution [para 1],True,True,True,True
+q22,When was King Louis XVI executed?,french_revolution,on 21 January 1793,french_revolution,french_revolution [para 3],True,True,True,True
+q23,Which volcano is the largest on Earth by volume?,volcanoes,Mauna Loa in Hawaii is the largest volcano,volcanoes,volcanoes [para 1],True,True,True,True
+q24,When did Mount Vesuvius destroy Pompeii?,volcanoes,destroyed Pompeii in 79 AD,volcanoes,volcanoes [para 3],True,True,True,True
+q25,How many plays did Shakespeare write?,shakespeare,wrote 37 plays,shakespeare,shakespeare [para 1],True,True,True,True
+q26,When did the Globe Theatre open?,shakespeare,opened in 1599,shakespeare,shakespeare [para 3],True,True,True,True
+q27,When was the first ARPANET message sent?,internet_history,transmitted in 1969,internet_history,internet_history [para 1],True,True,True,True
+q28,Who proposed the World Wide Web and when?,internet_history,proposed the World Wide Web in 1989,internet_history,internet_history [para 2],True,True,True,True
+q29,How many portions of fruit and vegetables does WHO recommend per day?,healthy_diet,five portions of fruit and vegetables per day,healthy_diet,healthy_diet [para 1],True,True,True,True
+q30,How much water should adults drink per day?,healthy_diet,about 2 litres of water per day,healthy_diet,healthy_diet [para 3],True,True,True,True
+q31,How long is a typical electric vehicle battery warranted for?,electric_vehicles,"8 years or 160,000 kilometres",electric_vehicles,electric_vehicles [para 1],True,True,True,True
+q32,What share of new cars sold in Norway in 2022 were fully electric?,electric_vehicles,over 80 percent of new cars sold there in 2022 were fully electric,electric_vehicles,electric_vehicles [para 4],True,True,True,True
+q33,When did Apollo 11 land on the Moon?,moon_landing,on 20 July 1969,moon_landing,moon_landing [para 1],True,True,True,True
+q34,How many astronauts walked on the Moon?,moon_landing,12 astronauts walked on the Moon,moon_landing,moon_landing [para 2],True,True,True,True
+q35,How large is the Amazon rainforest?,amazon_rainforest,5.5 million square kilometres,amazon_rainforest,amazon_rainforest [para 1],True,True,True,True
+q36,What percentage of the Earth's oxygen does the rainforest produce?,amazon_rainforest,6 percent of the Earth's oxygen,amazon_rainforest,amazon_rainforest [para 5],True,True,True,True
+q37,How many pieces does each chess player start with?,chess_rules,with 16 pieces,chess_rules,chess_rules [para 1],True,True,True,True
+q38,When was the New York Stock Exchange founded?,stock_market,founded in 1792,stock_market,stock_market [para 2],True,True,True,True
+q39,When was the Great Pyramid of Giza built?,ancient_egypt,built around 2560 BC,ancient_egypt,ancient_egypt [para 1],True,True,True,True
+q40,How many neurons does the human brain contain?,human_brain,about 86 billion neurons,human_brain,human_brain [para 1],True,True,True,True
+q41,How deep is the Mariana Trench?,ocean_depths,"10,935 metres below sea level",ocean_depths,ocean_depths [para 1],True,True,True,True
+q42,What is the Betz limit for wind turbines?,wind_energy,59.3 percent of the kinetic energy in wind,wind_energy,wind_energy [para 1],True,True,True,True
+q43,How long is maternity leave?,leave_policy,"Maternity leave is 26 weeks at full pay, followed by 13 weeks at statutory pay.",leave_policy,leave_policy [p. 2],True,True,False,False
+q44,What happens to customer data after account closure?,data_privacy,"Customer data is retained for 90 days after account closure, after which it is permanently deleted from all backups.",data_privacy,data_privacy [p. 1],True,True,True,True
+q45,Describe Saturn's rings.,solar_system,"Saturn's rings are made almost entirely of water ice, and span about 280,000 kilometres across, yet are only about 10 metres thick in places.",solar_system,solar_system [p. 1],True,True,False,False
+q46,Describe the chambers of the heart.,human_heart,The heart has four chambers: two atria and two ventricles. The left ventricle has the thickest wall because it pumps blood to the whole body.,human_heart,human_heart [p. 3],True,True,False,False
+q47,What does PEP 8 recommend?,python_basics,It recommends four spaces per indentation level and a maximum line length of 79 characters.,python_basics,python_basics [p. 2],True,True,False,False
+q48,What happened at Pearl Harbor?,world_war_ii,The attack on Pearl Harbor on 7 December 1941 brought the United States into the war the following day.,world_war_ii,world_war_ii [p. 2],True,True,True,True
+q49,Where is most of Earth's water?,water_cycle,"About 97 percent of Earth's water is held in the oceans, while only about 3 percent is freshwater, most of it locked in glaciers and ice caps.",water_cycle,water_cycle [p. 1],True,True,False,False
+q50,What did the Declaration of the Rights of Man proclaim?,french_revolution,"The Declaration of the Rights of Man and of the Citizen was adopted in August 1789, proclaiming liberty, property, and equality before the law.",french_revolution,french_revolution [para 2],True,True,False,False
+q51,Describe the Ring of Fire.,volcanoes,The Ring of Fire is a horseshoe-shaped belt around the Pacific Ocean containing about 75 percent of the world's active volcanoes.,volcanoes,volcanoes [para 4],True,True,True,True
+q52,What were the Apollo 11 modules called?,moon_landing,"The Apollo 11 command module was named Columbia, and the lunar module was named Eagle.",moon_landing,moon_landing [para 2],True,True,False,False

@@ -35,11 +35,20 @@ def score_question(result, gold_doc, gold_answer):
 def evaluate_strategy(strategy, docs, eval_set, reranker):
     chunks = chunk_corpus(docs, strategy)
     index = Index(chunks)
+    by_doc = {}
+    for chunk in chunks:
+        by_doc.setdefault(chunk["doc_id"], []).append(chunk["text"])
     rows = []
     for item in eval_set:
         result = ask(item["question"], index, reranker)
         hit, top1, correct = score_question(
             result, item["gold_doc"], item["gold_answer"]
+        )
+        # Pure chunking metric: does ANY chunk of the gold doc contain
+        # the whole gold phrase, regardless of retrieval?
+        survives = any(
+            _norm(item["gold_answer"]) in _norm(t)
+            for t in by_doc.get(item["gold_doc"], [])
         )
         rows.append({
             "id": item["id"],
@@ -51,6 +60,7 @@ def evaluate_strategy(strategy, docs, eval_set, reranker):
             "hit@5": hit,
             "hit@1": top1,
             "correct": correct,
+            "phrase_survives": survives,
         })
     n = len(rows)
     summary = {
@@ -60,6 +70,9 @@ def evaluate_strategy(strategy, docs, eval_set, reranker):
         "hit_rate@5": sum(r["hit@5"] for r in rows) / n if n else 0.0,
         "hit_rate@1": sum(r["hit@1"] for r in rows) / n if n else 0.0,
         "accuracy": sum(r["correct"] for r in rows) / n if n else 0.0,
+        "gold_phrase_survival": sum(
+            r["phrase_survives"] for r in rows
+        ) / n if n else 0.0,
         "reranker": "cross-encoder" if reranker.available else "hybrid-fallback",
     }
     return summary, rows

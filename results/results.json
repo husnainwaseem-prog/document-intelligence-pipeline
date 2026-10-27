@@ -1,0 +1,22 @@
+{
+  "fixed": {
+    "strategy": "fixed",
+    "n_questions": 52,
+    "n_chunks": 135,
+    "hit_rate@5": 1.0,
+    "hit_rate@1": 1.0,
+    "accuracy": 0.8653846153846154,
+    "gold_phrase_survival": 0.8653846153846154,
+    "reranker": "cross-encoder"
+  },
+  "sentence": {
+    "strategy": "sentence",
+    "n_questions": 52,
+    "n_chunks": 45,
+    "hit_rate@5": 1.0,
+    "hit_rate@1": 1.0,
+    "accuracy": 0.9807692307692307,
+    "gold_phrase_survival": 0.9807692307692307,
+    "reranker": "cross-encoder"
+  }
+}
