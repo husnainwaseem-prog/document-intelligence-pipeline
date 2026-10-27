@@ -21,6 +21,7 @@ only one two-sentence fact at a pack boundary. Full analysis:
 
 ```bash
 python -m venv .venv
+# macOS / Linux:  source .venv/bin/activate
 # Windows PowerShell (if activation is blocked, run this first):
 #   Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 .venv\Scripts\Activate.ps1
@@ -40,6 +41,13 @@ python -m src.cli ask --strategy sentence "How many days of annual leave?"
 python -m src.cli evaluate                       # both strategies -> results/
 python -m pytest tests/ -q                       # 9 tests
 ```
+
+## Notes on the comparison
+
+Hit rates are 1.000 for both strategies on this small synthetic corpus,
+so the accuracy gap comes from chunking alone. The two strategies use
+different chunk sizes (150 vs up to 500 chars); see "Limitations" in
+`REPORT.md`. Correctness is strict phrase containment in the top-1 chunk.
 
 ## Layout
 

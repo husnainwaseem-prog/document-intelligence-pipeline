@@ -1,9 +1,9 @@
 # Document Intelligence Pipeline with Evaluation
 # (Varolline internship project 7)
 #
-# RAG over a 24-document corpus (PDF/DOCX/TXT) with hybrid retrieval
+# RAG over a 30-document corpus (PDF/DOCX/TXT) with hybrid retrieval
 # (keyword TF-IDF + vector search) and a cross-encoder reranking step.
-# Two chunking strategies are compared on the same 36-question
+# Two chunking strategies are compared on the same 52-question
 # evaluation set: fixed-size windows vs sentence-aware packing.
 # Answers are extractive and always carry a source citation.
 
