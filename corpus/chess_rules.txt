@@ -1,0 +1,9 @@
+The Rules of Chess
+
+Each player starts a game of chess with 16 pieces: one king, one queen, two rooks, two bishops, two knights, and eight pawns.
+
+Castling is the only move that moves two pieces at once, the king and a rook, and it cannot be done if the king is in check.
+
+En passant is a special pawn capture that is only possible immediately after an opponent's pawn moves two squares forward.
+
+Checkmate ends the game at once. A game can also end in stalemate, where the player to move has no legal move but is not in check.

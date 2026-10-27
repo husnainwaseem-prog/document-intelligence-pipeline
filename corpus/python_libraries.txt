@@ -1,0 +1,9 @@
+Popular Python Libraries
+
+Python's ecosystem includes thousands of third-party libraries. NumPy provides fast arrays and numerical routines, while pandas offers dataframes for tabular data.
+
+Requests simplifies HTTP calls, and Flask is a lightweight framework for web applications.
+
+Matplotlib produces charts and plots, and pytest is the standard tool for automated testing.
+
+Most libraries are installed with pip from the Python Package Index, and virtual environments keep project dependencies separate.
